@@ -1,0 +1,407 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?3qkin2");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?#iefix3qkin2") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.woff?3qkin2") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.ttf?3qkin2") format("truetype"), url("fhttps://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.svg?3qkin2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.capture-area {
+  width: 100%;
+  height: 600px;
+  background-color: #111111;
+}
+.capture-area .left-cap {
+  width: 500px;
+  text-align: center;
+}
+.capture-area .left-cap p {
+  color: #7C7C7C;
+  padding: 40px;
+}
+.capture-area .left-cap p span {
+  background-color: #444444;
+  font-weight: bold;
+}
+.capture-area .left-cap .title-area h1 {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 100px;
+  line-height: 60px;
+}
+.capture-area .left-cap .title-area h1 span {
+  font-size: 65px;
+  border-bottom: 5px solid #444444;
+}
+.capture-area .left-cap .social {
+  /* Extra stuff just to make the demo pretty. */
+}
+.capture-area .left-cap .social .social-networks {
+  margin: 0 0 35px;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+}
+.capture-area .left-cap .social .social-networks li {
+  display: inline-block;
+}
+.capture-area .left-cap .social .social-networks a {
+  display: block;
+  position: relative;
+  margin: 0 7px;
+  width: 68px;
+  height: 68px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+}
+.capture-area .left-cap .social .social-networks a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
+  border-radius: 100px;
+  background-color: #1f2027;
+  transition: all 400ms;
+}
+.capture-area .left-cap .social .social-networks a:after {
+  position: relative;
+  display: block;
+  font-family: "icomoon";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: #fff;
+  font-size: 26px;
+  line-height: 66px;
+}
+.capture-area .left-cap .social .social-networks a:hover, .capture-area .left-cap .social .social-networks a:focus {
+  text-decoration: none;
+}
+.capture-area .left-cap .social .social-networks.spin-icon a:hover:after, .capture-area .left-cap .social .social-networks.spin-icon a:focus:after {
+  transition: transform 0.4s ease-out;
+  transform: rotateZ(360deg);
+}
+.capture-area .left-cap .social .social-networks.square a:hover:before, .capture-area .left-cap .social .social-networks.square a:focus:before {
+  border-radius: 0;
+}
+.capture-area .left-cap .social .social-networks.bounce a:hover, .capture-area .left-cap .social .social-networks.bounce a:focus {
+  animation: bounce 1s;
+}
+.capture-area .left-cap .social .social-networks .icon-linkedin:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-linkedin:hover:before, .capture-area .left-cap .social .social-networks .icon-linkedin:focus:before {
+  background: #0077b5;
+}
+.capture-area .left-cap .social .social-networks .icon-facebook:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-facebook:hover:before, .capture-area .left-cap .social .social-networks .icon-facebook:focus:before {
+  background: #3b5998;
+}
+.capture-area .left-cap .social .social-networks .icon-twitter:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-twitter:hover:before, .capture-area .left-cap .social .social-networks .icon-twitter:focus:before {
+  background: #00b0ed;
+}
+.capture-area .left-cap .social .social-networks .icon-github:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-github:hover:before, .capture-area .left-cap .social .social-networks .icon-github:focus:before {
+  background: #4183c4;
+}
+.capture-area .left-cap .social .social-networks .icon-instagram:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-instagram:hover:before, .capture-area .left-cap .social .social-networks .icon-instagram:focus:before {
+  background: #3f729b;
+}
+.capture-area .left-cap .social .social-networks .icon-vimeo:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-vimeo:hover:before, .capture-area .left-cap .social .social-networks .icon-vimeo:focus:before {
+  background: #1ab7ea;
+}
+.capture-area .left-cap .social .social-networks .icon-twitch:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-twitch:hover:before, .capture-area .left-cap .social .social-networks .icon-twitch:focus:before {
+  background: #6441a5;
+}
+.capture-area .left-cap .social .social-networks .icon-pinterest:after {
+  content: "";
+}
+.capture-area .left-cap .social .social-networks .icon-pinterest:hover:before, .capture-area .left-cap .social .social-networks .icon-pinterest:focus:before {
+  background: #cc2127;
+}
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -6px, 0);
+  }
+  70% {
+    transition-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -4px, 0);
+  }
+  90% {
+    transform: translate3d(0, -2px, 0);
+  }
+}
+.capture-area .left-cap .social body {
+  padding: 35px 0;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  background: #262730 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/noise-bg.png) repeat 0 0;
+}
+.capture-area .left-cap .social h1 {
+  margin-bottom: 0px;
+  font-size: 55px;
+  line-height: 1;
+}
+.capture-area .left-cap .social h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 45px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.capture-area .left-cap .social footer {
+  margin: 75px 0 35px;
+}
+.capture-area .left-cap .social a {
+  color: #4183c4;
+  text-decoration: none;
+}
+.capture-area .left-cap .social a:hover {
+  color: #7ba9d6;
+}
+.capture-area .rigth-cap {
+  width: 400px;
+  height: 400px;
+  padding: 50px;
+  color: #FFFFFF;
+  background-color: #2A2A2A;
+}
+.capture-area .rigth-cap .text-box {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #444444;
+}
+.capture-area .rigth-cap .text-box h3 {
+  font-size: 25px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.capture-area .rigth-cap .form-area {
+  margin-top: 20px;
+}
+.capture-area .rigth-cap .form-area form label {
+  font-size: 15px;
+}
+.capture-area .rigth-cap .form-area form input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 0 none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.capture-area .rigth-cap .form-area form button {
+  width: 103%;
+  height: 50px;
+  background-color: #0144DC;
+  color: #FFFFFF;
+  font-size: 18px;
+  cursor: pointer;
+  border: 0 none;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.capture-area .rigth-cap .form-area p {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.capture-area .rigth-cap p {
+  margin: 0;
+}
+
+.youtube-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  background-color: #FFFFFF;
+}
+.youtube-area .channelValue {
+  color: #000000;
+}
+.youtube-area .channelValue h3 {
+  font-family: "Rubik", sans-serif;
+  color: #000000;
+  font-size: 60px;
+  margin: 0;
+}
+.youtube-area .videoArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.youtube-area .videoArea iframe {
+  width: 300px;
+  height: 160px;
+  border-radius: 10px;
+  -webkit-box-shadow: 13px 6px 28px 0px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 13px 6px 28px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 13px 6px 28px 0px rgba(0, 0, 0, 0.66);
+}
+.youtube-area .videoArea .opacity-card {
+  position: relative;
+  background-color: #444444;
+  z-index: 5;
+}
+.youtube-area .videoArea .opacity-card img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.youtube-area .videoArea .align-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.youtube-area .videoArea .align-card .youtubeIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  background-image: url("../images/youtube.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  margin-left: -80%;
+  margin-bottom: 20px;
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+.youtube-area .videoArea .align-card .youtubeIcon:hover {
+  transition: all ease 0.4s;
+  background-color: #d49595;
+}
+.youtube-area .videoArea .align-card .textCard {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 100px;
+  color: #8f8f8f;
+  font-size: 15px;
+}
+.youtube-area .videoArea .align-card .textCard span {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.instagram-area {
+  height: 400px;
+  background-color: #FFFFFF;
+}
+.instagram-area .container h3 {
+  color: #000000;
+  font-size: 25px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #161616;
+}
+footer .container {
+  text-align: center;
+  line-height: 50px;
+}
+footer .container p {
+  color: #FFF;
+}
+footer .container a {
+  text-decoration: none;
+  color: #5885A8;
+}
+
+.capture-area, .capture-area .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+body .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 250px;
+  height: 50px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  transition: all ease 0.4s;
+}
+.button span {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #FFFFFF;
+  color: #303030;
+  transition: all ease 0.4s;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+@import 'colors';
+
+.instagram-area {
+  height: 400px;
+  background-color: $b-color-4;
+
+  .container {
+
+    h3 {
+      color: $b-color-1;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+}
