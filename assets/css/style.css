@@ -255,7 +255,24 @@
   background-color: #FFFFFF;
 }
 .youtube-area .channelValue {
-  color: #000000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.youtube-area .channelValue .numSub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  color: #8f8f8f;
+  font-size: 20px;
+}
+.youtube-area .channelValue .numSub span {
+  font-size: 50px;
+  color: #FF0D27;
+  font-weight: bold;
 }
 .youtube-area .channelValue h3 {
   font-family: "Rubik", sans-serif;
@@ -294,6 +311,11 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  transition: all ease 0.4s;
+}
+.youtube-area .videoArea .opacity-card img:hover {
+  transition: all ease 0.4s;
+  opacity: 0.1;
 }
 .youtube-area .videoArea .align-card {
   display: flex;
