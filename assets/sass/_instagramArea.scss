@@ -1,15 +1,64 @@
 @import 'colors';
 
-.instagram-area {
-  height: 400px;
-  background-color: $b-color-4;
+@media only screen and (min-width: 768px) {
+  .instagram-area {
+    height: 530px;
+    background-color: $b-color-4;
 
-  .container {
+    .container {
+      display: flex;
+      height: 530px;
+      justify-content: center;
+      flex-direction: column;
+    }
 
     h3 {
       color: $b-color-1;
-      font-size: 25px;
+      font-size: 40px;
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 460px) {
+  .instagram-area {
+    height: 530px;
+    background-color: $b-color-4;
+
+    .container {
+      display: flex;
+      height: 530px;
+      justify-content: center;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    h3 {
+      color: $b-color-1;
+      font-size: 40px;
       text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 460px) {
+  .instagram-area {
+    height: 530px;
+    background-color: $b-color-4;
+
+    .container {
+      display: flex;
+      height: 530px;
+      justify-content: center;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    h3 {
+      color: $b-color-1;
+      font-size: 40px;
+      text-align: center;
+      margin-top: 10px;
     }
   }
 }

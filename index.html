@@ -9,9 +9,10 @@
 
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/flickity.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <div class="capture-area">
+  <div class="capture-area" id="top">
     <div class="container">
       <div class="left-cap">
         <div class="title-area">
@@ -40,21 +41,43 @@
         </div>
         
         <div class="form-area">
-          <form>
+          <form action="https://dionei.us17.list-manage.com/subscribe/post?u=f162b3cbd6957b8ec4879b1fa&amp;id=770d9ef8ed" method="post" >
             <label for="fname">Nome*</label><br>
-            <input type="text" placeholder="Digite seu nome"><br>
+            <input type="text" value="" name="FNAME" required placeholder="Digite seu nome"><br>
             <label for="lname">Email*</label><br>
-            <input type="email" placeholder="Digite seu melhor Email"><br>
+            <input type="email" value="" name="EMAIL" required placeholder="Digite seu melhor Email"><br>
             <label for="lname">5+7=?</label><br>
             <input type="text" placeholder="Qual o resultado da soma?"><br><br>
-            <button type="submit" value="Submit">Me Avise!</button>
+            <button type="submit" value="Subscribe">Me Avise!</button>
           </form>
           <p>Prometo não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="youtube-area">
+  <div class="about" data-aos="zoom-out-up">
+    <div class="container">
+      <div class="aboutRow">
+        <div class="imageArea">
+          <img src="./assets/images/about.jpg"/>
+        </div>
+        <div class="descriptionAbout">
+          <h3>Quem é Dionei?</h3>
+          <p>
+            Desenvolvedor, apaixonado por tecnologia, aspirante a musico e ainda sei 
+            fazer café! Desde 2019 estou trabalhando na construção de minha carreira
+            profissional, trabalhando com as tecnologias mais recentes do mercado.
+            <br>
+            <br>
+            Se graduando em Analise e Desenvolvimento de Sistemas na 
+            <span><a href="https://uniamerica.br/" target="_blank">UniAmerica</a></span>. Atualmente 
+            trabalhando com desenvolvimento Web e Mobile.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="youtube-area" data-aos="zoom-out-up">
     <div class="container">
       <div class="channelValue">
         <h3>Assista</h3>
@@ -66,7 +89,7 @@
       </div>
       <div class="videoArea">
         <div 
-          class="carousel" 
+          class="carousel foneArea" 
           data-flickity='{ 
             "wrapAround": true, 
             "pageDots": false, 
@@ -88,40 +111,40 @@
             </iframe>
           </div>
           <div class="carousel-cell align-card opacity-card">
-            <img src="./assets/images/hackathon.jpg"/>
+            <img src="./assets/images/nasa.jpg"/>
             <div class="youtubeIcon"></div>
             <div class="textCard">
-              <span>Hackathon Unimed Cascavel - 2019</span>
+              <span>Nasa Space Challenge Foz do Iguaçu - 2018</span>
               Veja no canal
             </div>
             <iframe 
-              src="https://www.youtube.com/embed/EQajlRqMTCM" 
+              src="https://www.youtube.com/embed/IWjQIRjGFas" 
               frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
           </div>
           <div class="carousel-cell align-card opacity-card">
-            <img src="./assets/images/hackathon.jpg"/>
+            <img src="./assets/images/latinoware.jpg"/>
             <div class="youtubeIcon"></div>
             <div class="textCard">
-              <span>Hackathon Unimed Cascavel - 2019</span>
+              <span>Latinoware Foz do Iguaçu - 2019</span>
               Veja no canal
             </div>
             <iframe 
-              src="https://www.youtube.com/embed/EQajlRqMTCM" 
+              src="https://www.youtube.com/embed/ghJ4Mm8HZ28" 
               frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
           </div>
           <div class="carousel-cell align-card opacity-card">
-            <img src="./assets/images/hackathon.jpg"/>
+            <img src="./assets/images/hackatour.jpg"/>
             <div class="youtubeIcon"></div>
             <div class="textCard">
-              <span>Hackathon Unimed Cascavel - 2019</span>
+              <span>Hackatour Foz do Iguaçu - 2020</span>
               Veja no canal
             </div>
             <iframe 
-              src="https://www.youtube.com/embed/EQajlRqMTCM" 
+              src="https://www.youtube.com/embed/L2M-jUIWhkw" 
               frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
               encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
@@ -130,9 +153,31 @@
       </div>
     </div>
   </div>
+  <div class="contact">
+    <div class="container">
+      <div class="containerContact">
+        <h3>Grátis</h3>
+        <div class="textContact">
+          <p>
+            Precisando de ajuda para tirar uma ideia do papel ou outro 
+            assunto que necessite consultoria? Entre em contato!
+          </p>
+        </div>
+        <div>
+          <a href="http://wa.me/5545988269789" target="_blank">
+            <div class="button">
+              <span>
+                Fale comigo
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="instagram-area">
     <div class="container">
-      <h3>Follow Me</h3>
+      <h3>Follow me</h3>
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-a39af0ea-65fd-4e5c-af59-302f8b6190b2"></div>
     </div>
@@ -140,9 +185,16 @@
   <footer>
     <div class="container">
       <p>Made with 💗 by Dionei Bianchati 👉 <a href="https://github.com/dionbiancha/personal-website">Open source</a> </p>
+      <a href="#top">
+        <img src="./assets/images/up-arrow.png"/>
+      </a>
     </div>
   </footer>
   <script src="assets/js/flickity.pkgd.js"></script>
   <script src="assets/js/simpleCount.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -1,125 +1,373 @@
 @import 'colors';
 
-.youtube-area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 700px;
-  background-color: $b-color-4;
-
-  .channelValue {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    .numSub {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 300px;
-      color: $text-color-4;
-      font-size: 20px;
-
-      span {
-        font-size: 50px;
-        color: $text-color-5;
-        font-weight: bold;
-      }
-    }
-
-    h3 {
-      font-family: 'Rubik', sans-serif;
-      color: $text-color-3;
-      font-size: 60px;
-      margin: 0;
-    }
-  }
-
-  .videoArea {
+@media only screen and (min-width: 768px) {
+  .youtube-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    width: 100%;
+    height: 650px;
+    background-color: $b-color-4;
 
-    iframe {
-      width: 300px;
-      height: 160px;
-      border-radius: 10px;
-      -webkit-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
-      -moz-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
-      box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
-    }
-    
-    .opacity-card {
-      position: relative;
-      background-color: $b-color-5;
-      z-index: 5;
-    }
-    .opacity-card img {
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: .2;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      transition: all ease .4s;
+    .channelValue {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .numSub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        color: $text-color-4;
+        font-size: 20px;
+
+        span {
+          font-size: 50px;
+          color: $text-color-5;
+          font-weight: bold;
+        }
+      }
+
+      h3 {
+        font-family: 'Rubik', sans-serif;
+        color: $text-color-3;
+        font-size: 60px;
+        margin: 0;
+      }
     }
 
-    .opacity-card img:hover {
-      transition: all ease .4s;
-      opacity: .1;
-    }
-
-    .align-card {
+    .videoArea {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border-radius: 10px;
+      padding: 20px;
 
-      .youtubeIcon {
-        width: 40px;
-        height: 40px;
-        background-color: $b-color-4;
+      iframe {
+        width: 300px;
+        height: 160px;
         border-radius: 10px;
-        background-image: url('../images/youtube.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 20px 20px;
-        margin-left: -80%;
-        margin-bottom: 20px;
-        transition: all ease .4s;
-        cursor: pointer;
+        -webkit-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+        -moz-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+        box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+      }
+      
+      .opacity-card {
+        overflow: hidden;
+        position: relative;
+        background-color: $b-color-5;
+        z-index: 5;
+      }
+      .opacity-card img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .2;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: all ease .6s;
       }
 
-      .youtubeIcon:hover {
-        transition: all ease .4s;
-        background-color: $b-color-6;
-
+      .opacity-card img:hover {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: all ease .6s;
       }
 
-      .textCard {
+      .align-card {
         display: flex;
         flex-direction: column;
-        width: 90%;
-        margin-bottom: 100px;
+        justify-content: space-between;
+        height: 400px;
+        align-items: center;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .youtubeIcon {
+          width: 40px;
+          height: 40px;
+          background-color: $b-color-4;
+          border-radius: 10px;
+          background-image: url('../images/youtube.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 20px 20px;
+          margin-left: -80%;
+          margin-bottom: 20px;
+          transition: all ease .4s;
+          cursor: pointer;
+        }
+
+        .youtubeIcon:hover {
+          transition: all ease .4s;
+          background-color: $b-color-6;
+
+        }
+
+        .textCard {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin-bottom: 100px;
+          color: $text-color-4;
+          font-size: 15px;
+
+          span {
+            color:$text-color-1;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 460px) {
+  .youtube-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background-color: $b-color-4;
+
+    .channelValue {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .numSub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
         color: $text-color-4;
-        font-size: 15px;
+        font-size: 20px;
 
         span {
-          color:$text-color-1;
+          font-size: 50px;
+          color: $text-color-5;
           font-weight: bold;
-          font-size: 20px;
-          margin-bottom: 5px;
+        }
+      }
+
+      h3 {
+        font-family: 'Rubik', sans-serif;
+        color: $text-color-3;
+        font-size: 60px;
+        margin: 0;
+      }
+    }
+
+    .foneArea {
+      width: 100%;
+    }
+
+    .videoArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      iframe {
+        width: 140px;
+        height: 80px;
+        border-radius: 10px;
+        -webkit-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+        -moz-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+        box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+      }
+      
+      .opacity-card {
+        overflow: hidden;
+        position: relative;
+        background-color: $b-color-5;
+        z-index: 5;
+      }
+      .opacity-card img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .2;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: all ease .6s;
+      }
+
+      .opacity-card img:hover {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: all ease .6s;
+      }
+
+      .align-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+        align-items: center;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .youtubeIcon {
+          display: none;
+        }
+        .textCard {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin-bottom: 100px;
+          color: $text-color-4;
+          font-size: 15px;
+
+          span {
+            color:$text-color-1;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .youtube-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background-color: $b-color-4;
+
+    .channelValue {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .numSub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        color: $text-color-4;
+        font-size: 20px;
+
+        span {
+          font-size: 50px;
+          color: $text-color-5;
+          font-weight: bold;
+        }
+      }
+
+      h3 {
+        font-family: 'Rubik', sans-serif;
+        color: $text-color-3;
+        font-size: 60px;
+        margin: 0;
+      }
+    }
+
+    .foneArea {
+      width: 100%;
+    }
+
+    .videoArea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      iframe {
+        width: 140px;
+        height: 80px;
+        border-radius: 10px;
+        -webkit-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+        -moz-box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+        box-shadow: 13px 6px 28px 0px rgba(0,0,0,0.66);
+      }
+      
+      .opacity-card {
+        overflow: hidden;
+        position: relative;
+        background-color: $b-color-5;
+        z-index: 5;
+      }
+      .opacity-card img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: .2;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: all ease .6s;
+      }
+
+      .opacity-card img:hover {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: all ease .6s;
+      }
+
+      .align-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+        align-items: center;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .youtubeIcon {
+          display: none;
+        }
+        .textCard {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          margin-bottom: 100px;
+          color: $text-color-4;
+          font-size: 15px;
+
+          span {
+            color:$text-color-1;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+          }
         }
       }
     }

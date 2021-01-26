@@ -3,7 +3,9 @@
 
 @import 'colors';
 @import 'captureArea';
+@import 'aboutArea';
 @import 'youtubeArea';
+@import 'contact';
 @import 'instagramArea';
 @import 'footerArea';
 
@@ -12,6 +14,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

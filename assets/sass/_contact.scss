@@ -1,0 +1,116 @@
+@import 'colors';
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    width: 100%;
+    background-color: $b-color-1;
+
+    .containerContact {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      height: 300px;
+
+      h3 {
+        width: 30%;
+        color: $text-color-1;
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .textContact {
+        width: 30%;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    
+      p {
+        margin: 5px;
+        font-size: 15px;
+        color: $text-color-2;
+        line-height: 25px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 460px) {
+  .contact {
+    width: 100%;
+    background-color: $b-color-1;
+
+    .containerContact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 300px;
+
+      h3 {
+        color: $text-color-1;
+        margin: 5px;
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .textContact {
+        width: 80%;
+      }
+
+      a {
+        text-decoration: none;
+        margin: 5px;
+      }
+    
+      p {
+        margin: 5px;
+        font-size: 15px;
+        color: $text-color-2;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .contact {
+    width: 100%;
+    background-color: $b-color-1;
+
+    .containerContact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 300px;
+
+      h3 {
+        color: $text-color-1;
+        margin: 5px;
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .textContact {
+        width: 80%;
+      }
+
+      a {
+        text-decoration: none;
+        margin: 5px;
+      }
+    
+      p {
+        margin: 5px;
+        font-size: 15px;
+        color: $text-color-2;
+        line-height: 25px;
+      }
+    }
+  }
+}
