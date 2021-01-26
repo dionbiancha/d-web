@@ -1466,6 +1466,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Rubik", sans-serif;
   background-color: #FFFFFF;
   margin: 0;
