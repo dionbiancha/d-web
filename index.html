@@ -42,13 +42,31 @@
         </div>
         
         <div class="form-area">
-          <form action="https://dionei.us17.list-manage.com/subscribe/post?u=f162b3cbd6957b8ec4879b1fa&amp;id=770d9ef8ed" method="post" >
+          <script>
+            function check() {
+              var f = document.getElementById("frm");
+              var result = document.getElementById("result");
+              f.setAttribute('method',"post");
+              if(result.value === '12') {
+                f.setAttribute('action',"https://dionei.us17.list-manage.com/subscribe/post?u=f162b3cbd6957b8ec4879b1fa&amp;id=770d9ef8ed");
+              }
+              else {   
+                alert("O Resultado da soma está incorreto!");
+              }
+              return true;
+            }
+          </script>
+          <form 
+            method="post"
+            onsubmit="return check()"
+            id="frm" 
+          >
             <label for="fname">Nome*</label><br>
             <input type="text" value="" name="FNAME" required placeholder="Digite seu nome"><br>
             <label for="lname">Email*</label><br>
             <input type="email" value="" name="EMAIL" required placeholder="Digite seu melhor Email"><br>
             <label for="lname">5+7=?</label><br>
-            <input type="text" placeholder="Qual o resultado da soma?"><br><br>
+            <input id="result" type="text" placeholder="Qual o resultado da soma?"><br><br>
             <button type="submit" value="Subscribe">Me Avise!</button>
           </form>
           <p>Prometo não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
