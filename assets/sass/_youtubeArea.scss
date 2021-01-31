@@ -155,12 +155,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 300px;
         color: $text-color-4;
-        font-size: 20px;
+        font-size: 15px;
 
         span {
-          font-size: 50px;
+          font-size: 30px;
           color: $text-color-5;
           font-weight: bold;
         }
@@ -169,7 +168,7 @@
       h3 {
         font-family: 'Rubik', sans-serif;
         color: $text-color-3;
-        font-size: 60px;
+        font-size: 40px;
         margin: 0;
       }
     }
@@ -179,12 +178,9 @@
     }
 
     .videoArea {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       padding: 20px;
-
+      width: 460px;
+      
       iframe {
         width: 140px;
         height: 80px;
@@ -275,12 +271,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 300px;
         color: $text-color-4;
-        font-size: 20px;
+        font-size: 15px;
 
         span {
-          font-size: 50px;
+          font-size: 30px;
           color: $text-color-5;
           font-weight: bold;
         }
@@ -289,7 +284,7 @@
       h3 {
         font-family: 'Rubik', sans-serif;
         color: $text-color-3;
-        font-size: 60px;
+        font-size: 40px;
         margin: 0;
       }
     }
@@ -299,11 +294,8 @@
     }
 
     .videoArea {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       padding: 20px;
+      width: 280px;
 
       iframe {
         width: 140px;
@@ -346,6 +338,7 @@
         flex-direction: column;
         justify-content: space-between;
         height: 300px;
+        width: 200px;
         align-items: center;
         border-radius: 10px;
         padding-top: 30px;

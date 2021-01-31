@@ -13,9 +13,6 @@
 
 @media only screen and (min-width: 768px) {
   .capture-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 600px;
     background-color: $b-color-2;
@@ -26,7 +23,7 @@
       align-items: center;
 
       .left-cap {
-        width: 100%;
+        width: 50%;
         text-align: center;
         
         p {
@@ -60,7 +57,7 @@
     }
 
     .rigth-cap {
-      width: 100%;
+      width: 50%;
       height: 400px;
       padding: 50px;
       color: $text-color-1;
@@ -123,10 +120,7 @@
 
 @media only screen and (max-width: 768px) and (min-width: 460px) { 
   .capture-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    width: 100%;
     height: 1200px;
     background-color: $b-color-2;
     
@@ -174,7 +168,7 @@
 
     .rigth-cap {
       height: 550px;
-      width: 90%;
+      width: 100%;
       padding: 10px;
       color: $text-color-1;
       background-color: $b-color-3;
@@ -237,11 +231,8 @@
 
 @media only screen and (max-width: 460px) {
   .capture-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    height: 1200px;
+    width: 100%;
+    height: 1100px;
     background-color: $b-color-2;
     
     .container {
@@ -253,13 +244,15 @@
     }
 
     .left-cap {
-      height: 500px;
+      height: 400px;
       width: 100%;
+      margin: 30px;
       text-align: center;
       
       p {
         color: $text-color-2;
         padding: 40px;
+        margin: 0;
         
         span {
           background-color: $b-color-5;
@@ -272,11 +265,11 @@
         h1 {
           color: $text-color-1;
           margin: 0;
-          font-size: 100px;
-          line-height: 60px;
+          font-size: 70px;
+          line-height: 40px;
           
           span {
-            font-size: 65px;
+            font-size: 45px;
             border-bottom: 5px solid $b-color-5;
           }
         }
@@ -288,7 +281,7 @@
 
     .rigth-cap {
       height: 550px;
-      width: 90%;
+      width: 80%;
       padding: 10px;
       color: $text-color-1;
       background-color: $b-color-3;
