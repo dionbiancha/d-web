@@ -252,21 +252,21 @@
 
 @media only screen and (max-width: 460px) {
   .youtube-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
     width: 100%;
-    height: 650px;
+    height: 500px;
     background-color: $b-color-4;
+    margin-top: 90px;
 
     .channelValue {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+      flex: 1;
 
       .numSub {
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -289,13 +289,8 @@
       }
     }
 
-    .foneArea {
-      width: 100%;
-    }
-
     .videoArea {
-      padding: 20px;
-      width: 280px;
+      width: 100%;
 
       iframe {
         width: 140px;
@@ -339,6 +334,7 @@
         justify-content: space-between;
         height: 300px;
         width: 200px;
+        margin-right: 5px;
         align-items: center;
         border-radius: 10px;
         padding-top: 30px;

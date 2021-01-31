@@ -9,13 +9,6 @@
 @import 'instagramArea';
 @import 'footerArea';
 
-
-%align-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -23,7 +16,6 @@ html {
 body {
   overflow-x: hidden;
   font-family: 'Rubik', sans-serif;
-  background-color: $b-color-4;
   margin: 0;
 
   .container {
